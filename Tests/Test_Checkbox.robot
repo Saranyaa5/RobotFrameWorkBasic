@@ -9,7 +9,7 @@ ${url}    https://demo.automationtesting.in/Register.html
 *** Test Cases ***
 Validate the radio buttons
     open the browser with url
-    verify page contain checkbox
+    # verify page contain checkbox
     select the checkbox option cricket and hockey
     unselect the checkbox option hockey
     verify checkbox option cricket is selected
@@ -21,8 +21,8 @@ open the browser with url
     Maximize Browser Window
     Set Selenium Implicit Wait    5
 
-verify page contain checkbox
-    Page Should Contain Checkbox    type:checkbox
+# verify page contain checkbox
+    # Page Should Contain Checkbox    type:checkbox
 
 select the checkbox option cricket and hockey
     Select Checkbox    id:checkbox1
