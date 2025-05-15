@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-15T17:01:45.378753" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Checkbox" source="C:\RobotFrameWorkBasic\Tests\Test_Checkbox.robot">
+<test id="s1-t1" name="Validate the radio buttons" line="10">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-15T17:01:45.673375" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-15T17:01:45.673181" elapsed="11.101011"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-15T17:01:56.774560" elapsed="0.058727"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-15T17:01:56.833659" elapsed="0.001552"/>
+</kw>
+<status status="PASS" start="2025-05-15T17:01:45.672583" elapsed="11.162779"/>
+</kw>
+<kw name="verify page contain checkbox">
+<kw name="Page Should Contain Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T17:02:02.005558" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-15T17:02:02.005794" level="FAIL">Page should have contained checkbox 'type:checkbox' but did not.</msg>
+<arg>type:checkbox</arg>
+<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
+<status status="FAIL" start="2025-05-15T17:01:56.836494" elapsed="5.221846">Page should have contained checkbox 'type:checkbox' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-05-15T17:01:56.836058" elapsed="5.222579">Page should have contained checkbox 'type:checkbox' but did not.</status>
+</kw>
+<kw name="select the checkbox option cricket and hockey">
+<status status="NOT RUN" start="2025-05-15T17:02:02.059095" elapsed="0.000069"/>
+</kw>
+<kw name="unselect the checkbox option hockey">
+<status status="NOT RUN" start="2025-05-15T17:02:02.059493" elapsed="0.000026"/>
+</kw>
+<kw name="verify checkbox option cricket is selected">
+<status status="NOT RUN" start="2025-05-15T17:02:02.059663" elapsed="0.000024"/>
+</kw>
+<kw name="verify checkox option hockey is not selected">
+<status status="NOT RUN" start="2025-05-15T17:02:02.059862" elapsed="0.000027"/>
+</kw>
+<kw name="close browser session" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-15T17:02:02.060400" elapsed="2.209094"/>
+</kw>
+<status status="PASS" start="2025-05-15T17:02:02.060158" elapsed="2.209643"/>
+</kw>
+<status status="FAIL" start="2025-05-15T17:01:45.671912" elapsed="18.598196">Page should have contained checkbox 'type:checkbox' but did not.</status>
+</test>
+<doc>to validate the functioning of radio button</doc>
+<status status="FAIL" start="2025-05-15T17:01:45.380201" elapsed="18.890952"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Checkbox" id="s1" pass="0" fail="1" skip="0">Test Checkbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
